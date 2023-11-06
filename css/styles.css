@@ -1,0 +1,101 @@
+:root {
+    --main-background: rgba(235, 235, 235, 0.945);
+    --main-text-color: rgba(49, 49, 49, 0.945);
+
+    --black-box-background: #569395;
+    --white-box-background: #daf0ec;
+
+    --black-color: #575452;
+    --white-color: #F9F9F9;
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--main-text-color);
+}
+
+body {
+    width: 600px;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-background);
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+    margin-top: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbersColumn p, .lettersRow p {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lettersRow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box.black {
+    width: 70px;
+    height: 70px;
+    background-color: var(--black-box-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box.white {
+    width: 70px;
+    height: 70px;
+    background-color: var(--white-box-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+}
+
+.overlay {
+    overflow: visible;
+    pointer-events: none;
+    background: none !important;
+}
+
+.result {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen {
+    font-size: 1.6rem;
+}
